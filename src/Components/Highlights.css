@@ -1,0 +1,116 @@
+.highlights {
+width: 100%;
+}
+
+.highlights__grid {
+display: grid;
+grid-template-columns: 1fr;
+overflow: hidden;
+background-color: var(--color-card);
+border: 1px solid var(--color-border);
+border-radius: var(--radius-lg);
+box-shadow: var(--shadow-card);
+}
+
+.highlights__item {
+display: flex;
+align-items: center;
+gap: var(--space-sm);
+min-height: 110px;
+padding: var(--space-md);
+border-bottom: 1px solid var(--color-border);
+transition:
+background-color var(--transition-base),
+border-color var(--transition-base);
+}
+
+.highlights__item:last-child {
+border-bottom: 0;
+}
+
+.highlights__item:hover {
+background-color: rgba(255, 107, 26, 0.04);
+}
+
+.highlights__icon {
+display: flex;
+flex-shrink: 0;
+align-items: center;
+justify-content: center;
+width: 42px;
+height: 42px;
+color: var(--color-orange);
+background-color: rgba(255, 107, 26, 0.08);
+border: 1px solid rgba(255, 107, 26, 0.16);
+border-radius: var(--radius-sm);
+}
+
+.highlights__content {
+display: flex;
+flex-direction: column;
+gap: 0.15rem;
+}
+
+.highlights__content strong {
+color: var(--color-text);
+font-family: var(--font-heading);
+font-size: 1.4rem;
+font-weight: 800;
+line-height: 1;
+}
+
+.highlights__content span {
+color: var(--color-text-muted);
+font-size: var(--text-xs);
+line-height: 1.4;
+}
+
+@media (min-width: 600px) {
+.highlights__grid {
+grid-template-columns: repeat(2, 1fr);
+}
+
+.highlights__item {
+border-right: 1px solid var(--color-border);
+}
+
+.highlights__item:nth-child(2) {
+border-right: 0;
+}
+
+.highlights__item:nth-child(3),
+.highlights__item:nth-child(4) {
+border-top: 1px solid var(--color-border);
+}
+
+.highlights__item:nth-child(3) {
+border-bottom: 0;
+}
+
+.highlights__item:nth-child(4) {
+border-bottom: 0;
+}
+}
+
+@media (min-width: 1024px) {
+.highlights__grid {
+grid-template-columns: repeat(4, 1fr);
+}
+
+.highlights__item,
+.highlights__item:nth-child(3),
+.highlights__item:nth-child(4) {
+min-height: 120px;
+border-top: 0;
+border-right: 1px solid var(--color-border);
+border-bottom: 0;
+}
+
+.highlights__item:last-child {
+border-right: 0;
+}
+
+.highlights__item {
+padding: var(--space-lg);
+}
+}

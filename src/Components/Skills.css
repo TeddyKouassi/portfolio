@@ -1,0 +1,126 @@
+.skills {
+width: 100%;
+}
+
+.skills__header {
+max-width: 760px;
+margin-bottom: var(--space-xl);
+}
+
+.skills__grid {
+display: grid;
+grid-template-columns: 1fr;
+gap: var(--space-md);
+}
+
+.skills__card {
+position: relative;
+overflow: hidden;
+padding: var(--space-lg);
+transition:
+border-color var(--transition-base),
+box-shadow var(--transition-base);
+}
+
+.skills__card::before {
+content: '';
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 2px;
+background-color: var(--color-orange);
+transform: scaleX(0);
+transform-origin: left;
+transition: transform var(--transition-base);
+}
+
+.skills__card:hover {
+border-color: rgba(255, 107, 26, 0.3);
+box-shadow:
+var(--shadow-card),
+0 0 22px rgba(255, 107, 26, 0.06);
+}
+
+.skills__card:hover::before {
+transform: scaleX(1);
+}
+
+.skills__top {
+display: flex;
+align-items: center;
+justify-content: space-between;
+gap: var(--space-sm);
+margin-bottom: var(--space-md);
+}
+
+.skills__icon {
+display: flex;
+align-items: center;
+justify-content: center;
+width: 46px;
+height: 46px;
+color: var(--color-orange);
+background-color: rgba(255, 107, 26, 0.08);
+border: 1px solid rgba(255, 107, 26, 0.16);
+border-radius: var(--radius-sm);
+}
+
+.skills__category {
+padding: 0.3rem 0.6rem;
+color: var(--color-text-muted);
+border: 1px solid var(--color-border);
+border-radius: var(--radius-full);
+font-size: var(--text-xs);
+}
+
+.skills__card h3 {
+margin-bottom: 0.6rem;
+}
+
+.skills__card p {
+margin-bottom: var(--space-md);
+font-size: var(--text-sm);
+line-height: 1.7;
+}
+
+.skills__technologies {
+display: flex;
+flex-wrap: wrap;
+gap: 0.45rem;
+}
+
+.skills__technologies span {
+padding: 0.35rem 0.6rem;
+color: var(--color-text);
+background-color: rgba(255, 255, 255, 0.03);
+border: 1px solid var(--color-border);
+border-radius: var(--radius-sm);
+font-size: var(--text-xs);
+transition:
+color var(--transition-fast),
+border-color var(--transition-fast),
+background-color var(--transition-fast);
+}
+
+.skills__technologies span:hover {
+color: var(--color-orange);
+border-color: rgba(255, 107, 26, 0.3);
+background-color: rgba(255, 107, 26, 0.05);
+}
+
+@media (min-width: 600px) {
+.skills__grid {
+grid-template-columns: repeat(2, 1fr);
+}
+}
+
+@media (min-width: 1024px) {
+.skills__grid {
+grid-template-columns: repeat(3, 1fr);
+}
+
+.skills__card {
+padding: var(--space-lg);
+}
+}
