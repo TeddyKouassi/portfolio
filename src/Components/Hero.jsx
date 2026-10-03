@@ -42,13 +42,10 @@ function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.35 }}
           >
-            Je suis Maurel TOGBADJA, étudiant en formation en développement web
+            Je suis Kouassi Maurel, étudiant en formation en développement web
             à EIG Bénin. Je développe progressivement mes compétences dans la
             création de sites et d'applications web modernes, avec une approche
-            orientée vers la pratique et la résolution de problèmes. À travers
-            mes projets personnels et ma formation, je cherche à transformer mes
-            connaissances en compétences concrètes et à améliorer
-            continuellement ma manière de travailler. Actuellement à la
+            orientée vers la pratique et la résolution de problèmes. Actuellement à la
             recherche d'un stage académique, je souhaite mettre mes compétences
             en pratique, découvrir davantage le fonctionnement d'une équipe
             professionnelle et continuer à apprendre au contact de projets

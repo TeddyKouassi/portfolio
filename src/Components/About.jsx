@@ -91,7 +91,7 @@ function About() {
             </p>
 
             <div className="about__signature">
-              <span>Kouassi Maurel TOGBADJA</span>
+              <span>Kouassi Maurel </span>
               <small>Étudiant en développement web · EIG Bénin</small>
             </div>
           </motion.div>
