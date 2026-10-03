@@ -20,22 +20,19 @@ function Footer() {
 
   return (
     <footer className="footer">
-      {" "}
       <div className="container">
-        {" "}
         <div className="footer__top">
-          {" "}
           <div className="footer__identity">
-            {" "}
             <a href="#accueil" className="footer__logo">
-               Maurel{" "}
+              Maurel
             </a>
-          
+
             <p>
               Étudiant en développement web, passionné par la création
               d’expériences numériques modernes.
             </p>
           </div>
+
           <nav className="footer__nav" aria-label="Navigation du pied de page">
             {FOOTER_LINKS.map((link) => (
               <a key={link.href} href={link.href}>
@@ -43,23 +40,30 @@ function Footer() {
               </a>
             ))}
           </nav>
+
           <div className="footer__socials">
-            <a href="https://github.com/TeddyKouassi" aria-label="GitHub" target="_blank" rel="noreferrer">
+            <a
+              href="https://github.com/TeddyKouassi"
+              aria-label="GitHub"
+              target="_blank"
+              rel="noreferrer"
+            >
               <FiGithub size={19} />
             </a>
 
-            
-
             <a
-              href="togbadjamaurel@gmail.com"
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=togbadjamaurel@gmail.com"
               aria-label="Envoyer un email"
+              target="_blank"
+              rel="noreferrer"
             >
               <FiMail size={19} />
             </a>
           </div>
         </div>
+
         <div className="footer__bottom">
-          <span>© {new Date().getFullYear()}  Maurel TOGBADJA</span>
+          <span>© {new Date().getFullYear()} Kouassi Maurel</span>
 
           <span>Développement web</span>
 
