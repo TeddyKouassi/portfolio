@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import { motion } from "framer-motion";
 import {
@@ -13,8 +14,8 @@ const CONTACT_INFO = [
   {
     icon: FiMail,
     label: "Email",
-    value: "[togbadjamaurel@gmail.com](mailto:togbadjamaurel@gmail.com)",
-    href: "https://mail.google.com/mail/?view=cm&fs=1&to=togbadjamaurel@gmail.com",
+    value: "togbadjamaurel@gmail.com",
+    href: "mailto:togbadjamaurel@gmail.com",
   },
 
   {
@@ -56,7 +57,7 @@ function Contact() {
   const handleSubmit = (event) => {
     event.preventDefault();
 
-    const mailto = `mailto:votre-email@example.com?subject=${encodeURIComponent(
+    const mailto = `mailto:togbadjamaurel@gmail.com?subject=${encodeURIComponent(
       form.subject || "Prise de contact depuis mon portfolio",
     )}&body=${encodeURIComponent(
       `Nom : ${form.name}\nEmail : ${form.email}\n\n${form.message}`,

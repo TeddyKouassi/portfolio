@@ -48,7 +48,7 @@ const SKILLS = [
     title: "Git & GitHub",
     description:
       "Utilisation du versionnement pour organiser mes projets, suivre les évolutions et collaborer autour du code.",
-    technologies: ["Git", "GitHub", "Branches"],
+    technologies: ["Git", "GitHub", ],
   },
   {
     icon: FiTool,
